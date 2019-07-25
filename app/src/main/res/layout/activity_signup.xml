@@ -17,12 +17,13 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.352" />
 
     <EditText
         android:id="@+id/editText2"
@@ -35,11 +36,12 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <EditText
         android:id="@+id/editText3"
@@ -52,11 +54,12 @@
         android:ems="10"
         android:hint="ID"
         android:inputType="textPersonName"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <EditText
         android:id="@+id/editText4"
@@ -69,11 +72,12 @@
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <Button
         android:id="@+id/button"
