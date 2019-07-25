@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void onClick(View v)
     {
+
+
         //check if user & password field are not empty
         //check db if user exist, login, otherwise return error. PHP - Hassan
         Course_list();
