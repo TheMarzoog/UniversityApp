@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup">
+    tools:context=".SignUp">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/emailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.47" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordEditText"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.578" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/idEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.372" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/NameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.271" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/singUpButton"
         android:layout_width="212dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
