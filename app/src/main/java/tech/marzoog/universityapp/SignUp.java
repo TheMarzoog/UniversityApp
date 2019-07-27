@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
@@ -27,13 +28,18 @@ public class SignUp extends AppCompatActivity {
         singUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fullname = fullNameText.getText().toString();
+                System.out.println("TestTestTestAndMoreTest");
+                String fullName = fullNameText.getText().toString();
                 String userID = userIDText.getText().toString();
                 String email = emailText.getText().toString();
                 String password = passwordText.getText().toString();
 
+
+                Toast.makeText(SignUp.this, String.format("%s welcome to the university", fullName), Toast.LENGTH_LONG).show();
+
                 BackgroundTask backgroundTask = new BackgroundTask(getApplicationContext());
-                backgroundTask.execute(fullname, userID, email, password);
+                backgroundTask.execute(fullName, userID, email, password);
+
             }
         });
 

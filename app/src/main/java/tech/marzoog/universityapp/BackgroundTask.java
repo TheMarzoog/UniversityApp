@@ -31,17 +31,22 @@ public class BackgroundTask extends AsyncTask<String, String, String> {
         String password = strings[3];
 
 
+
+
         //TODO: change the url
-        String regURL = "http://127.0.0.1/Newxampp/htdocs/UniversityApp/SignUp.php";
+        String regURL = "http://10.0.0.2/UniversityApp/Signup.php";
 
         try{
             URL url = new URL(regURL);
+
             try{
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);
+                System.out.printf("print1: %s, %s, %s, %s", fullName, userId, email, password);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
+                System.out.println("Test");
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, "UTF-8");
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
                 String insertData = URLEncoder.encode("Name", "UTF-8")+"="+URLEncoder.encode(fullName, "UTF-8")+
@@ -56,11 +61,11 @@ public class BackgroundTask extends AsyncTask<String, String, String> {
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                 String result = "";
                 String line = "";
-                StringBuffer stringBuffer = new StringBuffer();
+                StringBuilder stringBuilder = new StringBuilder();
                 while ((line=bufferedReader.readLine())!=null){
-                    stringBuffer.append(line).append("\n");
+                    stringBuilder.append(line).append("\n");
                 }
-                result = stringBuffer.toString();
+                result = stringBuilder.toString();
                 bufferedReader.close();
                 inputStream.close();
                 httpURLConnection.disconnect();

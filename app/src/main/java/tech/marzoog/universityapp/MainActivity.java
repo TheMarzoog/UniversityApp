@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText userIDFild;
-    private Button loginButton;
+    private Button loginButton, signUpButton, searchForCoursesButton;
     private EditText password;
 
     @Override
@@ -20,12 +20,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         userIDFild = findViewById(R.id.userID);
         loginButton = findViewById(R.id.loginButton);
+        signUpButton = findViewById(R.id.singUpButton);
+        searchForCoursesButton = findViewById(R.id.searchForCoursesButton);
+
+
+
         loginButton.setOnClickListener(this);
 
-//        loginButton.setOnClickListener((v) -> {
-//            String usrID = userIDFild.getText().toString();
-//            Toast.makeText(MainActivity.this, usrID, Toast.LENGTH_LONG).show();
-//        });
+
+        /*loginButton.setOnClickListener((v) -> {
+            String usrID = userIDFild.getText().toString();
+            Toast.makeText(MainActivity.this, usrID, Toast.LENGTH_LONG).show();
+        });*/
     }
     public void onClick(View v)
     {
