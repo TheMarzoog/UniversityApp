@@ -7,7 +7,7 @@
     tools:context=".CourseDetail">
 
     <TextView
-        android:id="@+id/courseNameTextView"
+        android:id="@+id/detailCourseNameTextView"
         android:layout_width="409dp"
         android:layout_height="39dp"
         android:text="TextView"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/courseNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/detailCourseNameTextView"
         app:layout_constraintVertical_bias="0.984" />
 
     <Button
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="@+id/ratingBar"
-        app:layout_constraintTop_toTopOf="@+id/courseNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/detailCourseNameTextView"
         app:layout_constraintVertical_bias="0.983" />
 
     <ImageView

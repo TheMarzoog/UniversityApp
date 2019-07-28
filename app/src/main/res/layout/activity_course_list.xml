@@ -6,85 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Course_list">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="398dp"
-        android:layout_height="592dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6">
+    <ScrollView
+        android:id="@+id/coursesListScrollView"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-        <TableRow
-            android:layout_width="384dp"
-            android:layout_height="42dp">
+        <LinearLayout
+            android:id="@+id/courseListLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView9"
-                android:layout_width="104dp"
+                android:id="@+id/coursesListTextView"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Course"
+                android:scrollbarSize="@dimen/default_gap"
+                android:text="TextView"
                 android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="178dp"
-                android:layout_height="match_parent"
-                android:text="Instractor"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="143dp"
-                android:layout_height="match_parent"
-                android:text="Number"
-                android:textSize="24sp" />
-        </TableRow>
-
-    </TableLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/coursesRecyclerView"
-        android:layout_width="103dp"
-        android:layout_height="549dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tableLayout"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/instractersRecyclerView"
-        android:layout_width="179dp"
-        android:layout_height="554dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/coursesNumbersRecyclarView"
-        android:layout_width="116dp"
-        android:layout_height="556dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
-        app:layout_constraintStart_toStartOf="@+id/tableLayout"
-        app:layout_constraintTop_toTopOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.857" />
 </android.support.constraint.ConstraintLayout>
